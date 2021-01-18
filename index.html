@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../slava-test-work/css/style.css">
     <title>FunDaily</title>
 </head>
 <body>
     
-    <header class="header animate__animated animate__fadeInDown" id="header">
+    <header class="header" id="header">
         <nav class="header-nav container">
             <div class="header-nav-logo">
                 <div class="header-nav-logo-left">mir</div>
@@ -39,7 +38,7 @@
                 <a href="../slava-test-work/index.html" class="popup-link">Промо-коды</a>
                 <a href="../slava-test-work/index.html" class="popup-link">Страницы</a>
                 <a href="../slava-test-work/index.html" class="popup-link">Платежи</a>
-                <a href="../slava-test-work/index.html" class="popup-link">Админка</a>
+                <a href="../slava-test-work/index.html" class="popup-link adm">Админка</a>
                 <hr>
                 <div class="popup-auth">
                     <i class="popup-auth-icon">
@@ -60,10 +59,10 @@
         <section class="home" id="home">
             <div class="home-container container grid">
                 <div class="home-info">
-                    <h1 class="home-info-title animate__animated animate__fadeInLeft">Lorem Ipsum de coko doc</h1>
-                    <hr class="hr animate__animated animate__fadeInLeft"> 
-                    <p class="home-info-online animate__animated animate__fadeInLeft ">Игроков онлайн:<span class="home-info-online-value">500</span></p>
-                    <div class="home-info-btn animate__animated animate__fadeInLeft">
+                    <h1 class="home-info-title">Lorem Ipsum de coko doc</h1>
+                    <hr class="hr"> 
+                    <p class="home-info-online">Игроков онлайн:<span class="home-info-online-value">500</span></p>
+                    <div class="home-info-btn">
                         <p class="home-info-btn-title">mc.mirror.xyz</p>
                         <i class="home-info-btn-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +72,7 @@
                         </i>
                     </div>
                 </div>
-                <div class="home-img animate__animated animate__fadeInRight animate__delay-1s">
+                <div class="home-img">
                     <div class="home-img-wrapper">
                         <img src="../slava-test-work/img/home.png" alt="" class="home-img-wrapper-href">
                     </div>
@@ -90,7 +89,7 @@
                     <li class="shop-menu-link"><a href="#">Кейсы</a></li>
                     <li class="shop-menu-link"><a href="#">Монеты</a></li>
                 </ul>
-                <div class="shop-products animate__animated animate__pulse">
+                <div class="shop-products">
                     <div class="shop-products-item" id="a">
                         <img src="../slava-test-work/img/shop-item.png" alt="" class="shop-products-item-img">
                         <span class="shop-products-item-title">Главный админ</span>
@@ -150,7 +149,7 @@
         <section class="history">
             <div class="history-container container">
                 <h2 class="history-title">Последние покупки</h2>
-                <ul class="history-products animate__animated animate__pulse">
+                <ul class="history-products">
                     <li class="history-products-item" id="1">
                         <img src="../slava-test-work/img/shop-item.png" alt="" class="history-products-item-img">
                         <p class="history-products-item-title">Главный админ</p>
@@ -232,13 +231,45 @@
     <div class="admin">
         <div class="admin-body">
             <div class="admin-content">
-                <h4 class="admin-info-title">ГЛАВНЫЙ АДМИН
+                <div class="admin-info-title">
+                    <h4 class="admin-info-title-text">ГЛАВНЫЙ АДМИН</h4>
                     <i class="admin-info-title-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 18C11.8022 18 11.6089 17.9414 11.4444 17.8315C11.28 17.7216 11.1518 17.5654 11.0761 17.3827C11.0004 17.2 10.9806 16.9989 11.0192 16.8049C11.0578 16.6109 11.153 16.4327 11.2929 16.2929C11.4328 16.153 11.6109 16.0578 11.8049 16.0192C11.9989 15.9806 12.2 16.0004 12.3827 16.0761C12.5654 16.1518 12.7216 16.28 12.8315 16.4444C12.9414 16.6089 13 16.8022 13 17C13 17.2652 12.8946 17.5196 12.7071 17.7071C12.5196 17.8946 12.2652 18 12 18ZM13 12.84V14C13 14.2652 12.8946 14.5196 12.7071 14.7071C12.5196 14.8946 12.2652 15 12 15C11.7348 15 11.4804 14.8946 11.2929 14.7071C11.1054 14.5196 11 14.2652 11 14V12C11 11.7348 11.1054 11.4804 11.2929 11.2929C11.4804 11.1054 11.7348 11 12 11C12.2967 11 12.5867 10.912 12.8334 10.7472C13.08 10.5824 13.2723 10.3481 13.3858 10.074C13.4994 9.79994 13.5291 9.49834 13.4712 9.20736C13.4133 8.91639 13.2704 8.64912 13.0607 8.43934C12.8509 8.22956 12.5836 8.0867 12.2926 8.02882C12.0017 7.97094 11.7001 8.00065 11.426 8.11418C11.1519 8.22771 10.9176 8.41997 10.7528 8.66665C10.588 8.91332 10.5 9.20333 10.5 9.5C10.5 9.76522 10.3946 10.0196 10.2071 10.2071C10.0196 10.3946 9.76522 10.5 9.5 10.5C9.23479 10.5 8.98043 10.3946 8.7929 10.2071C8.60536 10.0196 8.5 9.76522 8.5 9.5C8.49739 8.8503 8.67566 8.2127 9.01487 7.65857C9.35408 7.10445 9.84083 6.65568 10.4206 6.3625C11.0004 6.06933 11.6504 5.94332 12.2977 5.99859C12.9451 6.05386 13.5643 6.28823 14.086 6.67545C14.6077 7.06267 15.0113 7.58746 15.2517 8.19107C15.492 8.79467 15.5596 9.45327 15.4469 10.0931C15.3342 10.733 15.0456 11.3288 14.6134 11.814C14.1813 12.2991 13.6226 12.6544 13 12.84Z" fill="#C5DCFA"/>
                         </svg>                            
                     </i>
-                </h4>
+                </div>
+                <span class="admin-title-input">Никнэйм</span>
+                <input type="text" class="input-name">
+                <span class="admin-title-input-value">Количество</span>
+                <div class="admin-input-value-wrapper">
+                    <input type="text" class="input-value" value="1">
+                    <div class="admin-input-value-inner">
+                        <div class="plus">
+                            <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.45699 4.40084L3.70231 0.603186C3.60231 0.465686 3.39762 0.465686 3.2984 0.603186L0.54293 4.40084C0.536149 4.41018 0.532086 4.42122 0.531193 4.43272C0.5303 4.44423 0.532611 4.45576 0.537869 4.46604C0.543128 4.47631 0.551129 4.48493 0.560985 4.49093C0.570842 4.49694 0.582169 4.5001 0.593711 4.50006H1.17965C1.21949 4.50006 1.25699 4.48053 1.28043 4.4485L3.49996 1.38912L5.71949 4.4485C5.74293 4.48053 5.78043 4.50006 5.82027 4.50006H6.40621C6.45699 4.50006 6.48668 4.44225 6.45699 4.40084Z" fill="#1A1A1A"/>
+                            </svg>                                
+                        </div>
+                        <div class="minus">
+                            <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.40611 0.100037H5.82017C5.78032 0.100037 5.74282 0.119568 5.71939 0.151599L3.49985 3.21097L1.28032 0.151599C1.25689 0.119568 1.21939 0.100037 1.17954 0.100037H0.593605C0.542824 0.100037 0.513136 0.157849 0.542824 0.199255L3.29751 3.99691C3.39751 4.13441 3.6022 4.13441 3.70142 3.99691L6.45611 0.199255C6.48657 0.157849 6.45689 0.100037 6.40611 0.100037Z" fill="#1A1A1A"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+                <span class="admin-title-input">
+                    <span class="admin-title-input-title">Промо-код</span>
+                    <i class="admin-title-input-icon">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5109 0.65519C6.67288 0.722308 6.82004 0.820681 6.94399 0.944691L11.056 5.05602C11.1801 5.17998 11.2786 5.32719 11.3457 5.48922C11.4129 5.65126 11.4475 5.82495 11.4475 6.00036C11.4475 6.17577 11.4129 6.34946 11.3457 6.51149C11.2786 6.67353 11.1801 6.82073 11.056 6.94469L6.94399 11.056C6.82004 11.18 6.67288 11.2784 6.5109 11.3455C6.34893 11.4126 6.17532 11.4472 5.99999 11.4472C5.82466 11.4472 5.65104 11.4126 5.48907 11.3455C5.3271 11.2784 5.17993 11.18 5.05599 11.056L0.943987 6.94469C0.819877 6.82073 0.721419 6.67353 0.654243 6.51149C0.587067 6.34946 0.55249 6.17577 0.55249 6.00036C0.55249 5.82495 0.587067 5.65126 0.654243 5.48922C0.721419 5.32719 0.819877 5.17998 0.943987 5.05602L5.05599 0.944691C5.17993 0.820681 5.3271 0.722308 5.48907 0.65519C5.65104 0.588073 5.82466 0.553528 5.99999 0.553528C6.17532 0.553528 6.34893 0.588073 6.5109 0.65519ZM5.52858 7.13809C5.6536 7.26311 5.82317 7.33335 5.99998 7.33335C6.1768 7.33335 6.34636 7.26311 6.47139 7.13809C6.59641 7.01307 6.66665 6.8435 6.66665 6.66669V3.33335C6.66665 3.15654 6.59641 2.98697 6.47139 2.86195C6.34636 2.73692 6.1768 2.66669 5.99998 2.66669C5.82317 2.66669 5.6536 2.73692 5.52858 2.86195C5.40356 2.98697 5.33332 3.15654 5.33332 3.33335V6.66669C5.33332 6.8435 5.40356 7.01307 5.52858 7.13809ZM5.52858 9.13809C5.6536 9.26312 5.82317 9.33335 5.99998 9.33335C6.1768 9.33335 6.34636 9.26312 6.47139 9.13809C6.59641 9.01307 6.66665 8.8435 6.66665 8.66669C6.66665 8.48988 6.59641 8.32031 6.47139 8.19528C6.34636 8.07026 6.1768 8.00002 5.99998 8.00002C5.82317 8.00002 5.6536 8.07026 5.52858 8.19528C5.40356 8.32031 5.33332 8.48988 5.33332 8.66669C5.33332 8.8435 5.40356 9.01307 5.52858 9.13809Z" fill="#616161"/>
+                        </svg>                            
+                    </i>
+                    <span class="admin-title-input-icon-subtitle">Не обязательно</span>
+                </span>
+                <input type="text" class="input-promo">
+                <input class="yes-rules" type="checkbox" name="check" id="check">
+                <label class="check" for="check">Я соглашаюсь с условиями</label>
+                <button class="admin-btn">Купить</button>
             </div>
         </div>
     </div>

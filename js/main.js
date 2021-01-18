@@ -31,3 +31,40 @@ $('.main').click(function(){
   $('.popup').removeClass('active-popup');
 })
 
+$('.open-info-btn').click(function(){
+  $('.admin').addClass('buy-admin');
+})
+
+
+$(function() {
+
+      $('.admin-input-value-wrapper').each(function() {
+
+          var asd = $(this);
+
+          asd.find('div.minus').click(function() {
+
+              var data = asd.find('input').val();
+
+              if(data > 0) {
+
+                  asd.find('input').val(parseInt(data) - 1);
+
+              }
+ 
+              return false
+
+          });
+
+          asd.find('div.plus').click(function() {
+
+              var data = asd.find('input').val();
+
+              asd.find('input').val(parseInt(data) + 1);
+
+              return false
+          });
+      });
+  });
+  
+  

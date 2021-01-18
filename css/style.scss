@@ -585,6 +585,262 @@ footer{
 
 
 
+.buy-admin{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+    left: 0;
+    top: 0;
+    z-index: 40;
+    .admin-body{
+        min-height: 100%;
+        z-index: 21;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        .admin-content{
+            position: relative;
+            padding: 52px 64px;
+            z-index: 50;
+            max-width: 488px;
+            max-height: 590px;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.02);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            .admin-info-title{
+                display: flex;
+                width: 100%;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #1E1E1E;
+                .admin-info-title-text{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+                .admin-info-title-icon{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+            }
+            .admin-title-input{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.02em;
+                color: #1E1E1E;
+                padding-bottom: 6px;
+            }
+            .admin-title-input-value{
+                padding-bottom: 6px;
+                padding-top: 24px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.02em;
+                color: #1E1E1E;
+                
+            }
+            .input-name{
+                padding: 13px 16px;
+                width: 360px;
+                height: 50px;
+                background: #FFFFFF;
+                border: 1px solid #C7C7C7;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #1E1E1E;
+                outline: none;
+            }
+            .input-name:focus{
+                border: 1px solid #507CFF;
+            }
+            .input-name:active{
+                border: 1px solid #507CFF;
+            }
+            .admin-input-value-wrapper{
+                width: 100%;
+                display: flex;
+                .input-value{
+                    width: 323px;
+                    border: 1px solid #C7C7C7;
+                    box-sizing: border-box;
+                    border-radius: 4px 0 0 4px;
+                    outline: none;
+                }
+                .admin-input-value-inner{
+                    height: 48px;
+                    width: 36px;
+                    .plus{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 24px;
+                        width: 36px;
+                        border: 1px solid #C7C7C7;
+                        border-radius: 0 4px 0 0;
+                        border-left: none;
+                    }
+                    .minus{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 24px;
+                        width: 36px;
+                        border: 1px solid #C7C7C7;
+                        border-radius: 0 0 4px 0;
+                        border-left: none;
+                        border-top: none;   
+                    }
+                }
+
+            }
+            .admin-title-input{
+                display: flex;
+                padding-bottom: 6px;
+                padding-top: 24px;
+                .admin-title-input-title{
+                    margin-left: 0;
+                    margin-right: auto;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.02em;
+                    color: #1E1E1E;
+                }
+                .admin-title-input-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+                .admin-title-input-icon-subtitle{
+                    height: 16px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.084px;
+                    color: #616161;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+            .input-promo{
+                padding: 13px 16px;
+                width: 360px;
+                height: 50px;
+                background: #FFFFFF;
+                border: 1px solid #C7C7C7;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #1E1E1E;
+                outline: none;
+            }
+            .input-promo:active, .input-promo:focus{
+                border-color: #507CFF !important;
+            }
+            .yes-rules {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+            .yes-rules+label {
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+            }
+            .yes-rules+label::before {
+                content: '';
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 1px solid #adb5bd;
+                border-radius: 2px;
+                margin-right: 0.5em;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .yes-rules:checked+label::before {
+                border: 1px solid #C7C7C7;
+                background-color: white;
+                background-image: url(../img/check.png);
+            }
+            /* стили при наведении курсора на checkbox */
+            .yes-rules:not(:disabled):not(:checked)+label:hover::before {
+                
+            }
+            /* стили для активного состояния чекбокса (при нажатии на него) */
+            .yes-rules:not(:disabled):active+label::before {
+                 
+            }
+            /* стили для чекбокса, находящегося в фокусе */
+            .yes-rules:focus+label::before {
+            }
+            /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+            .yes-rules:focus:not(:checked)+label::before {
+                 
+            }
+            /* стили для чекбокса, находящегося в состоянии disabled */
+            .yes-rules:disabled+label::before {
+                
+            }
+            .check{
+                margin-top: 35px;
+                margin-bottom: 27px;
+            }
+            .admin-btn{
+                display: block;
+                width: 100%;
+                height: 50px;
+                background: #1672EC;
+                box-shadow: 0px 10px 40px -12px rgba(25, 38, 132, 0.16);
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+}
+
+
 
 
 
