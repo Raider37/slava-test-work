@@ -693,6 +693,10 @@ footer .footer-container .footer-img {
   right: -33.34px;
 }
 
+.admin {
+  display: none;
+}
+
 .buy-admin {
   display: block;
   position: fixed;
@@ -1017,6 +1021,12 @@ footer .footer-container .footer-img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+}
+
+.buy-admin .admin-body .admin-content .close {
+  position: absolute;
+  top: 14.67px;
+  right: -33.34px;
 }
 
 @media screen and (max-width: 1199px) {

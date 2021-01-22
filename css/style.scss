@@ -583,7 +583,9 @@ footer{
     }
 }
 
-
+.admin{
+    display: none;
+}
 
 .buy-admin{
     display: block;
@@ -834,6 +836,11 @@ footer{
                 text-align: center;
                 letter-spacing: 0.02em;
                 color: #FFFFFF;
+            }
+            .close{
+                position: absolute;
+                top: 14.67px;
+                right: -33.34px;
             }
         }
 

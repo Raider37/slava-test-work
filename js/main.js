@@ -22,18 +22,23 @@ $('.shop-products-item').click(function(){
 })
 $('.close').click(function(){
   $('.open-info').removeClass('active');
+  $('.admin').removeClass('buy-admin');
 })
 
 $('.header-nav-btn').click(function(){
   $('.popup').toggleClass('active-popup');
 })
-$('.main').click(function(){
+$('.buy-admin, .active').click(function(){
   $('.popup').removeClass('active-popup');
+  $('.admin').removeClass('buy-admin');
 })
 
+
 $('.open-info-btn').click(function(){
+  $('.open-info').removeClass('active');
   $('.admin').addClass('buy-admin');
 })
+
 
 
 $(function() {
